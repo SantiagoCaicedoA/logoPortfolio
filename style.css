@@ -1,0 +1,165 @@
+/* Global view Mine */
+body {
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #EBEBEB;
+}
+
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container {
+    background-color: rgb(60, 60, 60);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+header {
+    max-width: 1024px;
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(43, 226, 147);
+}
+
+.col p {
+    font-size: 0.825rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}  
+
+.mybutton{
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+    display: inline-block;
+    
+    
+}
+
+.hide-desktop-only{
+    
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line{
+    font-weight: 700;
+}
+
+.highlight{
+    font-weight: 700px;
+}
+.mob-wrapper{
+    display: none;
+}
+
+
+
+
+
+
+
+/* Tablet view */
+@media (max-width : 768px){
+
+    .col{
+        width: 47%;
+    }
+    .hide-desktop-only{
+    
+        display: block;
+    }
+    
+    .header-container{
+        position: relative;
+    }
+    
+    .container{
+        padding-top: 40px;
+    }
+    
+    .logo{
+        padding: 40px 0;
+    }
+   
+    .mybutton{
+        margin-left: 0;
+    }
+    
+    nav a{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .mob-wrapper{
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav{
+        display: no;
+        position: absolute;
+        padding-top: 8px   ;
+    }
+
+    .nav-button{
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        
+
+    }
+
+}
+
+/* Mobile view */
+
+@media (max-width : 400px){
+
+.col {
+    width: 100%;
+}
+    
+
+.hide-mobile {
+    display: none;
+}
+
+.mybutton{
+    margin-left: 0;
+    display: block;
+}
+    
+
+
+}
